@@ -1,0 +1,20 @@
+{
+  "name": "training-decorator-pattern",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "tsc",
+    "watch": "tsc -w",
+    "lint": "tslint ./src/**/*.ts",
+    "lint:fix": "tslint --fix ./src/**/*.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "tslint": "^6.1.1",
+    "typescript": "^3.8.3"
+  }
+}
