@@ -1,6 +1,6 @@
-import { HouseBlend } from './beverages/HouseBlend';
-import { Milk } from './addOns/Milk';
-import { Sugar } from './addOns/Sugar';
+import { HouseBlend } from './beverages/HouseBlend'
+import { Milk } from './addOns/Milk'
+import { Sugar } from './addOns/Sugar'
 
 export class CoffeeShop {
   order(): any {

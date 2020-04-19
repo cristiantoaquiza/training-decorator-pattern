@@ -5,8 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "tsc -t es5 ./src/**/*.ts --outDir ./dist && node ./dist/index.js",
-    "watch": "tsc -w",
+    "start": "tsc  && node ./dist/index.js",
     "lint": "tslint ./src/**/*.ts",
     "lint:fix": "tslint --fix ./src/**/*.ts"
   },

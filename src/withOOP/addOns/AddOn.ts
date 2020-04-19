@@ -1,4 +1,4 @@
-import { Beverage } from '../beverages/Beverage';
+import { Beverage } from '../beverages/Beverage'
 
 export abstract class AddOn extends Beverage {
   protected beverage: Beverage

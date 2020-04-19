@@ -1,4 +1,4 @@
-import { Beverage } from './Beverage';
+import { Beverage } from './Beverage'
 
 export class DarkRoast extends Beverage {
   constructor() {
