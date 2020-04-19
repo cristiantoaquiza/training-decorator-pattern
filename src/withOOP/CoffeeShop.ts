@@ -20,7 +20,7 @@ export class CoffeeShop {
     const milkAddOn = new Milk(darkRoast)
     const sugarAddOn = new Sugar(milkAddOn)
     return {
-      houseBlend: `${darkRoast.description}: ${darkRoast.cost()}`,
+      darkRoast: `${darkRoast.description}: ${darkRoast.cost()}`,
       milkAddOn: `${milkAddOn.description}: ${milkAddOn.cost()}`,
       sugarAddOn: `${sugarAddOn.description}: ${sugarAddOn.cost()}`,
     }

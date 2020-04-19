@@ -1,5 +1,6 @@
 import { makeHouseBlend, makeDarkRoast } from './beveragesMaker'
 import { withMilk, withSugar } from './addOnsAdder'
+import { flow } from 'lodash/fp'
 
 export const orderHouseBlendWithMilkAndSugar = () => {
   const houseBlend = makeHouseBlend()
@@ -17,8 +18,15 @@ export const orderDarkRoastWithSugarAndMilk = () => {
   const withSugarAddOn = withSugar(darkRoast)
   const withMilkAddOn = withMilk(withSugarAddOn)
   return {
-    houseBlend: `${darkRoast.description}: ${darkRoast.cost}`,
+    darkRoast: `${darkRoast.description}: ${darkRoast.cost}`,
     sugarAddOn: `${withSugarAddOn.description}: ${withSugarAddOn.cost}`,
     milkAddOn: `${withMilkAddOn.description}: ${withMilkAddOn.cost}`,
+  }
+}
+
+export const orderDarkRoastWithSugarAndMilk2 = () => {
+  const darkRoast = flow(makeDarkRoast, withSugar, withMilk)()
+  return {
+    flowedDarkRoast: `${darkRoast.description}: ${darkRoast.cost}`,
   }
 }
