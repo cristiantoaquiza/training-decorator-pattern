@@ -1,5 +1,4 @@
-const myName = 'CrisTo'
+import { CoffeeShop } from './withOOP/CoffeeShop';
 
-export function hello(world: string = myName): string {
-  return `Hello ${world}`
-}
+const decoratorWithOOOP = new CoffeeShop().order()
+console.log('with OOP', decoratorWithOOOP)

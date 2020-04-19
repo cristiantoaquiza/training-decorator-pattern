@@ -5,7 +5,8 @@
   "rules": {
     "eofline": false,
     "quotemark": [true, "single"],
-    "semicolon": [true, "never"]
+    "semicolon": [true, "never"],
+    "no-console": false
   },
   "rulesDirectory": []
 }
