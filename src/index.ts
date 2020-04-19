@@ -1,8 +1,17 @@
-import { CoffeeShop } from './withOOP/CoffeeShop';
-import { order } from './withFunctions/coffeeShop';
+import { CoffeeShop } from './withOOP/CoffeeShop'
+import {
+  orderHouseBlendWithMilkAndSugar,
+  orderDarkRoastWithSugarAndMilk,
+} from './withFunctions/coffeeShop'
 
-const decoratorWithOOOP = new CoffeeShop().order()
-console.log('with OOP', decoratorWithOOOP)
+const decoratorWithOOP = new CoffeeShop().orderHouseBlendWithMilkAndSugar()
+console.log('with OOP', decoratorWithOOP)
 
-const decoratorWithFunctions = order()
+const decoratorWithOOP2 = new CoffeeShop().orderDarkRoastWithMilkAndSugar()
+console.log('with OOP', decoratorWithOOP2)
+
+const decoratorWithFunctions = orderHouseBlendWithMilkAndSugar()
 console.log('with Functions', decoratorWithFunctions)
+
+const decoratorWithFunctions2 = orderDarkRoastWithSugarAndMilk()
+console.log('with Functions', decoratorWithFunctions2)

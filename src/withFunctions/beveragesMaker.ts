@@ -9,3 +9,10 @@ export const makeHouseBlend = (): Beverage => {
     cost: 250,
   }
 }
+
+export const makeDarkRoast = (): Beverage => {
+  return {
+    description: 'Dark Roast',
+    cost: 300,
+  }
+}
